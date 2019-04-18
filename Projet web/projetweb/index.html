@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "fr">
+	<head> 
+		<title>Page de garde</title>
+		
+	        <link href="site.css" type="text/css" rel="stylesheet" title="site.css" />
+		
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function dessineLigne(){
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.moveTo(0, 0);
+			ctx.lineTo(200, 100);
+			ctx.stroke(); 
+			}
+			
+			function dessineRectangle(){
+			var c = document.getElementById("myCanvas");
+			var ctx = c.getContext("2d");
+			ctx.fillRect(20,20,150,100); 
+			}
+			
+			function effacer() {
+			var m = confirm("Effacer?");
+			var c = document.getElementById("myCanvas");
+			if (m) {
+			var context = c.getContext('2d');
+			context.clearRect(0, 0, c.width, c.height);
+			}
+		}
+			</script>
+	</head>
+	<body>
+		<h1>Page Personnelle de Marc-Alain PETIT </h1>
+		<p>Etudiant en L3 info à UPSUD, jouant de la guitare électrique depuis 13 ans. Ne chante pas pour éviter ce genre de <a href="https://www.politusic.com/wp-content/uploads/2014/07/bad-singer-fingers-ears.jpg target ="_blank">situation</a>. Pratique actuellement la musculation, après avoir essayé de nombreux sports, dont certains collectifs, d'autres de combat. Actuellement, je suis interdit de pratiquer tout type de sport impliquant les jambes, du à une tendinite <span><div class="Aled"><img src ="http://4.bp.blogspot.com/-nAadrTv31vM/UKgwG-nTOgI/AAAAAAAAAi0/xwcrineBrbY/s1600/smiley_face_crying.jpg"></img></span></div><span>Petit plaisantain que je suis, la plupart des liens ne sont pas soulignés en bleu !</span></p>
+		<h2>
+	<p>Emploi du temps, WIP <img class="WIP" src="WIP.png"></img></p>
+	<table>
+	<tr><th><b>Jours</b></th><th>LUNDI</th><th>MARDI</th><th>MERCREDI</th><th>JEUDI</th><th>VENDREDI</th></tr>
+	<tr><td><b>8:30 -> 10:00</b></td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+	<tr><td><b>10:15 -> 12:30 </b></td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+	<tr><td><b>13:30 -> 15:00</b></td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+	<tr><td><b>15:15 -> 17:15</b></td><td>?</td><td>?</td><td>?</td><td>?</td><td>?</td></tr>
+	</table>
+		<p>Loisirs:</p>
+			<ol>
+				<li>Guitare électrique</li>
+				<li><a href="https://fr.wikipedia.org/wiki/Musculation" target ="_blank">"Musculation"</a></li>
+			</ol>
+		</h2>
+		<h3>
+		Formulaire à remplir:
+			<form method="get" action ="https://tp-ssh2.dep-informatique.u-psud.fr/~mpetit4/tableau.php" >
+			Nom : <input type="text" name = "champ1" size ="12">
+			Prénom: <input type="text" name = "champ2" size ="12">
+			Message: <input type="text" name = "champ3" size ="12">
+			<input type ="hidden" name = "lignes" value = ""></input>
+			<input type ="submit"/>	
+		</form>
+
+		</h3>
+		<h4>
+		Où me trouver?
+			<p><a href="https://goo.gl/maps/cKufC" target ="_blank">ICI</a></p>
+		</h4>
+		<h5>
+		Liens utiles :
+		<ul>
+			<li><p>http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png</p></li>
+			<li><p><a href = "https://tp-ssh2.dep-informatique.u-psud.fr/~mpetit4/projet.html">Le projo</a></p></li>
+			<li><p><a href = "accueil.php">Le projo LOCAL</a></p></li></p></li>
+			<li><p></p></li>
+			<li><p></p></li>
+		</ul>
+		</h5>
+		<h6>
+		<p>Compétences:</p>
+		<ol>
+			<li><img class="language" src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png" alt="html5" /></li>
+			<li><img class ="language" src="http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Java-icon.png"></li>
+		</ol>
+		<p>Dessin : </p>
+		<canvas id="myCanvas" width="200" height="100">Your browser does not support the HTML5 canvas tag.</canvas>
+		<br><button onclick="dessineLigne()">Ligne</button>
+		<button onclick="dessineRectangle()">Rectangle</button>
+		<button onclick="effacer()">Effacer</button>
+		</br>
+		</h6>		
+	</body>
+</html>

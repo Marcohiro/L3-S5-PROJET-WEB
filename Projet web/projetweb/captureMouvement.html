@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "fr">
+	<head> 
+		<title>OUtil de capture des Mouvements</title>
+			<link href="projet.css" type="text/css" rel="stylesheet" title="projet.css" />
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src ="https://tp-ssh1.dep-informatique.u-psud.fr/~mpetit4/captureMouvements.js"></script>
+		<script src ="https://tp-ssh1.dep-informatique.u-psud.fr/~mpetit4/verifieFormulaire.js"></script>
+	</head>
+	<body>
+		<h1>
+		<button onclick="captureMouvements()">Enregistrer</button>
+		<button id=arret disabled=disabled onclick="stop()">Stop</button>
+		
+		<p>Enregistrements des mouvements : </p>
+		<p id='enCours'></p>
+		<p id='coords'></p>
+		<p id='angles'></p>
+		<p id='COMPTEURS'></p>
+		</h1>		
+	</body>
+</html>
